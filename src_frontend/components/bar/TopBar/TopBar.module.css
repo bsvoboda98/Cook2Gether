@@ -1,0 +1,65 @@
+/* TopBar.module.css */
+
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: var(--header-height);
+    padding: 0 100px;
+    font-size: 24px;
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    box-shadow: 0 12px 10px -5px rgba(0, 0, 0, .1);
+}
+
+.left, .right, .middle {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    width: 33%;
+}
+
+.left{
+    justify-content: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.middle {
+    justify-content: center;
+}
+
+.left a, .right a, .middle a {
+    padding: 0 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.left a:hover, .right a:hover, .middle a:hover {
+    color: black;
+}
+
+.right button {
+    background-color: white;
+    border: 2px solid var(--dark-color);
+    border-radius: .375em;
+    color: var(--dark-color);
+    cursor: pointer;
+    font-size: 16px;
+    height: 2.5em;
+    justify-content: center;
+    padding: calc(.5em - 1px) 1em;
+}
+
+.right button:hover {
+    border: 2px solid black;
+    color: black;
+}
+
+
